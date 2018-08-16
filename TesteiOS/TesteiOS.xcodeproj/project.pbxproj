@@ -12,6 +12,15 @@
 		09419FE221260824003A81D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE021260824003A81D8 /* Main.storyboard */; };
 		09419FE421260826003A81D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE321260826003A81D8 /* Assets.xcassets */; };
 		09419FE721260826003A81D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE521260826003A81D8 /* LaunchScreen.storyboard */; };
+		09419FFB21260FE1003A81D8 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF221260FE0003A81D8 /* DINNeuzeitGroteskStd-BdCond.otf */; };
+		09419FFC21260FE1003A81D8 /* DINMittelschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF321260FE0003A81D8 /* DINMittelschriftStd.otf */; };
+		09419FFD21260FE1003A81D8 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF421260FE0003A81D8 /* DINPro-Bold.otf */; };
+		09419FFE21260FE1003A81D8 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF521260FE0003A81D8 /* DINNeuzeitGroteskStd-Light.otf */; };
+		09419FFF21260FE1003A81D8 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF621260FE0003A81D8 /* DINPro-Black.otf */; };
+		0941A00021260FE1003A81D8 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF721260FE0003A81D8 /* DINPro-Medium.otf */; };
+		0941A00121260FE1003A81D8 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF821260FE0003A81D8 /* DINPro-Light.otf */; };
+		0941A00221260FE1003A81D8 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF921260FE1003A81D8 /* DINPro-Regular.otf */; };
+		0941A00321260FE1003A81D8 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FFA21260FE1003A81D8 /* DINEngschriftStd.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		09419FE321260826003A81D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09419FE621260826003A81D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09419FE821260826003A81D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09419FF221260FE0003A81D8 /* DINNeuzeitGroteskStd-BdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-BdCond.otf"; sourceTree = "<group>"; };
+		09419FF321260FE0003A81D8 /* DINMittelschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINMittelschriftStd.otf; sourceTree = "<group>"; };
+		09419FF421260FE0003A81D8 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		09419FF521260FE0003A81D8 /* DINNeuzeitGroteskStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-Light.otf"; sourceTree = "<group>"; };
+		09419FF621260FE0003A81D8 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
+		09419FF721260FE0003A81D8 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		09419FF821260FE0003A81D8 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
+		09419FF921260FE1003A81D8 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		09419FFA21260FE1003A81D8 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,55 @@
 		09419FDB21260824003A81D8 /* TesteiOS */ = {
 			isa = PBXGroup;
 			children = (
+				09419FF121260F89003A81D8 /* resourses */,
+				09419FF021260967003A81D8 /* Controller */,
+				09419FEF2126095A003A81D8 /* View */,
+				09419FEE2126094E003A81D8 /* Model */,
 				09419FDC21260824003A81D8 /* AppDelegate.swift */,
-				09419FDE21260824003A81D8 /* ViewController.swift */,
 				09419FE021260824003A81D8 /* Main.storyboard */,
 				09419FE321260826003A81D8 /* Assets.xcassets */,
 				09419FE521260826003A81D8 /* LaunchScreen.storyboard */,
 				09419FE821260826003A81D8 /* Info.plist */,
 			);
 			path = TesteiOS;
+			sourceTree = "<group>";
+		};
+		09419FEE2126094E003A81D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09419FEF2126095A003A81D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09419FF021260967003A81D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09419FDE21260824003A81D8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09419FF121260F89003A81D8 /* resourses */ = {
+			isa = PBXGroup;
+			children = (
+				09419FFA21260FE1003A81D8 /* DINEngschriftStd.otf */,
+				09419FF321260FE0003A81D8 /* DINMittelschriftStd.otf */,
+				09419FF221260FE0003A81D8 /* DINNeuzeitGroteskStd-BdCond.otf */,
+				09419FF521260FE0003A81D8 /* DINNeuzeitGroteskStd-Light.otf */,
+				09419FF621260FE0003A81D8 /* DINPro-Black.otf */,
+				09419FF421260FE0003A81D8 /* DINPro-Bold.otf */,
+				09419FF821260FE0003A81D8 /* DINPro-Light.otf */,
+				09419FF721260FE0003A81D8 /* DINPro-Medium.otf */,
+				09419FF921260FE1003A81D8 /* DINPro-Regular.otf */,
+			);
+			path = resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +183,16 @@
 			files = (
 				09419FE721260826003A81D8 /* LaunchScreen.storyboard in Resources */,
 				09419FE421260826003A81D8 /* Assets.xcassets in Resources */,
+				0941A00121260FE1003A81D8 /* DINPro-Light.otf in Resources */,
+				09419FFB21260FE1003A81D8 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
 				09419FE221260824003A81D8 /* Main.storyboard in Resources */,
+				0941A00221260FE1003A81D8 /* DINPro-Regular.otf in Resources */,
+				0941A00321260FE1003A81D8 /* DINEngschriftStd.otf in Resources */,
+				09419FFD21260FE1003A81D8 /* DINPro-Bold.otf in Resources */,
+				09419FFF21260FE1003A81D8 /* DINPro-Black.otf in Resources */,
+				09419FFC21260FE1003A81D8 /* DINMittelschriftStd.otf in Resources */,
+				0941A00021260FE1003A81D8 /* DINPro-Medium.otf in Resources */,
+				09419FFE21260FE1003A81D8 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
