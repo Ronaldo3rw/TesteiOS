@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09419FDD21260824003A81D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09419FDC21260824003A81D8 /* AppDelegate.swift */; };
-		09419FDF21260824003A81D8 /* FormContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09419FDE21260824003A81D8 /* FormContatoViewController.swift */; };
 		09419FE221260824003A81D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE021260824003A81D8 /* Main.storyboard */; };
 		09419FE421260826003A81D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE321260826003A81D8 /* Assets.xcassets */; };
 		09419FE721260826003A81D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09419FE521260826003A81D8 /* LaunchScreen.storyboard */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		09419FD921260824003A81D8 /* TesteiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TesteiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09419FDC21260824003A81D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		09419FDE21260824003A81D8 /* FormContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormContatoViewController.swift; sourceTree = "<group>"; };
 		09419FE121260824003A81D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09419FE321260826003A81D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09419FE621260826003A81D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		09419FF021260967003A81D8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				09419FDE21260824003A81D8 /* FormContatoViewController.swift */,
 				09EF4DDE212DD2B500E033EA /* ContatoViewController.swift */,
 				09EF4DE0212DD2D800E033EA /* FundosViewController.swift */,
 			);
@@ -303,7 +300,6 @@
 				09EF4DE1212DD2D800E033EA /* FundosViewController.swift in Sources */,
 				09EF4DDB212D8DEF00E033EA /* httpRequest.swift in Sources */,
 				09EF4DDD212DD06D00E033EA /* Cells.swift in Sources */,
-				09419FDF21260824003A81D8 /* FormContatoViewController.swift in Sources */,
 				09419FDD21260824003A81D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
