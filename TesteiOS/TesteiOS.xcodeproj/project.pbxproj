@@ -20,7 +20,9 @@
 		0941A00121260FE1003A81D8 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF821260FE0003A81D8 /* DINPro-Light.otf */; };
 		0941A00221260FE1003A81D8 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FF921260FE1003A81D8 /* DINPro-Regular.otf */; };
 		0941A00321260FE1003A81D8 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 09419FFA21260FE1003A81D8 /* DINEngschriftStd.otf */; };
-		09EF4DDB212D8DEF00E033EA /* httpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EF4DDA212D8DEF00E033EA /* httpRequest.swift */; };
+		09E25552212EF0A300EECCD7 /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E25551212EF0A300EECCD7 /* TextFieldEffects.framework */; };
+		09E25554212EF0A300EECCD7 /* VMaskTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E25553212EF0A300EECCD7 /* VMaskTextField.framework */; };
+		09E25557212EF1E600EECCD7 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E25556212EF1E600EECCD7 /* HttpRequest.swift */; };
 		09EF4DDD212DD06D00E033EA /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EF4DDC212DD06D00E033EA /* Cells.swift */; };
 		09EF4DDF212DD2B500E033EA /* ContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EF4DDE212DD2B500E033EA /* ContatoViewController.swift */; };
 		09EF4DE1212DD2D800E033EA /* FundosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EF4DE0212DD2D800E033EA /* FundosViewController.swift */; };
@@ -43,7 +45,9 @@
 		09419FF821260FE0003A81D8 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
 		09419FF921260FE1003A81D8 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
 		09419FFA21260FE1003A81D8 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
-		09EF4DDA212D8DEF00E033EA /* httpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpRequest.swift; sourceTree = "<group>"; };
+		09E25551212EF0A300EECCD7 /* TextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E25553212EF0A300EECCD7 /* VMaskTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VMaskTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09E25556212EF1E600EECCD7 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		09EF4DDC212DD06D00E033EA /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
 		09EF4DDE212DD2B500E033EA /* ContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoViewController.swift; sourceTree = "<group>"; };
 		09EF4DE0212DD2D800E033EA /* FundosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FundosViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09E25552212EF0A300EECCD7 /* TextFieldEffects.framework in Frameworks */,
+				09E25554212EF0A300EECCD7 /* VMaskTextField.framework in Frameworks */,
 				FD274EC57A333564ED9FDCDA /* Pods_TesteiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +91,7 @@
 		09419FDB21260824003A81D8 /* TesteiOS */ = {
 			isa = PBXGroup;
 			children = (
-				09EF4DD9212D8DC200E033EA /* services */,
+				09E25555212EF12A00EECCD7 /* APIClient */,
 				09419FF121260F89003A81D8 /* resourses */,
 				09419FF021260967003A81D8 /* Controller */,
 				09419FEF2126095A003A81D8 /* View */,
@@ -139,12 +145,12 @@
 			path = resourses;
 			sourceTree = "<group>";
 		};
-		09EF4DD9212D8DC200E033EA /* services */ = {
+		09E25555212EF12A00EECCD7 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
-				09EF4DDA212D8DEF00E033EA /* httpRequest.swift */,
+				09E25556212EF1E600EECCD7 /* HttpRequest.swift */,
 			);
-			path = services;
+			path = APIClient;
 			sourceTree = "<group>";
 		};
 		1583658CBDED94C3B6E312F6 /* Pods */ = {
@@ -159,6 +165,8 @@
 		B8A5F696D921DF6BDCAA2EFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09E25551212EF0A300EECCD7 /* TextFieldEffects.framework */,
+				09E25553212EF0A300EECCD7 /* VMaskTextField.framework */,
 				9AD778CD715310FB16F23F2D /* Pods_TesteiOS.framework */,
 			);
 			name = Frameworks;
@@ -297,8 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				09EF4DDF212DD2B500E033EA /* ContatoViewController.swift in Sources */,
+				09E25557212EF1E600EECCD7 /* HttpRequest.swift in Sources */,
 				09EF4DE1212DD2D800E033EA /* FundosViewController.swift in Sources */,
-				09EF4DDB212D8DEF00E033EA /* httpRequest.swift in Sources */,
 				09EF4DDD212DD06D00E033EA /* Cells.swift in Sources */,
 				09419FDD21260824003A81D8 /* AppDelegate.swift in Sources */,
 			);

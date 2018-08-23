@@ -1,5 +1,6 @@
 import UIKit
 import TextFieldEffects
+import VMaskTextField
 
 class ContatoViewController: UIViewController {
 
@@ -15,13 +16,14 @@ class ContatoViewController: UIViewController {
     
     @IBOutlet weak var lblValidationMessage: UILabel!
     
-    
-    
+      
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.view.backgroundColor = UIColor.gray
 
+        buscaJSON()
+        
         
     }
     
@@ -48,7 +50,7 @@ class ContatoViewController: UIViewController {
         // Telefone
         guard let telefone = fldTelefone.text, fldTelefone.text?.count != 0 else {
             lblValidationMessage.isHidden = false
-            self.lblValidationMessage.text = "Digite seu telefone"
+            self.lblValidationMessage.text = "Digite seu telefone"            
             return
         }
     }
@@ -61,6 +63,45 @@ class ContatoViewController: UIViewController {
         return emailTest.evaluate(with: emailId)
     }
    
+    // MARK: - HttpRequest
+    func buscaJSON(){
+        // Abrir conexão com API
+        let cellsUrl = NSURL(string: "https://floating-mountain-50292.herokuapp.com/cells.json")
+        let request = NSMutableURLRequest(url: cellsUrl! as URL)
+        
+        // Tarefa para busca no banco
+        let task = URLSession.shared.dataTask(with: request as URLRequest){
+            data, response, error in guard error == nil && data != nil else {
+                print(error!)
+                return
+            }
+            
+            let httpStatus = response as? HTTPURLResponse
+            
+            if httpStatus?.statusCode == 200 {
+                
+                if data?.count != 0 {
+                    
+                    // Recebe o JSON
+                    let respostaJSON = try! JSONSerialization.jsonObject(with: data!, options: .allowFragments) as! NSDictionary
+     
+                    // Busca um Array de Objetos
+                    if let listaCells = respostaJSON["cells"] as? [NSDictionary] {
+                        print(listaCells)
+                    }
+                    
+                    
+                 
+                    
+                }else{print("erro dados dentro")}
+            }else{print("erro http \u{1F602}")}
+        }
+        task.resume()
+    }
+    
+
+    
+    
     
     
     /*
